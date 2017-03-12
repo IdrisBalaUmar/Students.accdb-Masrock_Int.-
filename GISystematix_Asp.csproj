@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B2508C20-60E0-4AD6-AD39-437AA77871E0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GISystematix_Asp</RootNamespace>
+    <AssemblyName>GISystematix_Asp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.aspx" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="AdminUploadAssignment.aspx" />
+    <Content Include="AdminUploadMaterial.aspx" />
+    <Content Include="AdminViewAssignment.aspx" />
+    <Content Include="AdminViewStudents.aspx" />
+    <Content Include="assets\assignment.html" />
+    <Content Include="assets\blank.html" />
+    <Content Include="assets\chart.html" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\css\docs.css" />
+    <Content Include="assets\css\font-awesome.css" />
+    <Content Include="assets\css\pygments-manni.css" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfontba72.svg" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="assets\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="assets\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="assets\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="assets\ico\favicon.png" />
+    <Content Include="assets\ico\LOGO.jpg" />
+    <Content Include="assets\img\1.png" />
+    <Content Include="assets\img\2.png" />
+    <Content Include="assets\img\3.png" />
+    <Content Include="assets\img\4.png" />
+    <Content Include="assets\img\background.png" />
+    <Content Include="assets\img\BatchLogoForAdmin.jpg" />
+    <Content Include="assets\img\find_user1.png" />
+    <Content Include="assets\js\application.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\customizer.js" />
+    <Content Include="assets\js\dataTables\dataTables.bootstrap.css" />
+    <Content Include="assets\js\dataTables\dataTables.bootstrap.js" />
+    <Content Include="assets\js\dataTables\jquery.dataTables.js" />
+    <Content Include="assets\js\filesaver.js" />
+    <Content Include="assets\js\holder.js" />
+    <Content Include="assets\js\html5shiv.js" />
+    <Content Include="assets\js\jquery-1.10.2.js" />
+    <Content Include="assets\js\jquery.js" />
+    <Content Include="assets\js\jquery.metisMenu.js" />
+    <Content Include="assets\js\jszip.js" />
+    <Content Include="assets\js\less.js" />
+    <Content Include="assets\js\morris\morris-0.4.3.min.css" />
+    <Content Include="assets\js\morris\morris.js" />
+    <Content Include="assets\js\morris\raphael-2.1.0.min.js" />
+    <Content Include="assets\js\raw-files.js" />
+    <Content Include="assets\js\respond.min.js" />
+    <Content Include="assets\js\uglify.js" />
+    <Content Include="assets\login.html" />
+    <Content Include="assets\stud-panel.html" />
+    <Content Include="assets\student-panel.html" />
+    <Content Include="assets\table.html" />
+    <Content Include="ChangeP.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="ChangePasswordTest.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="dist\css\bootstrap-theme.css" />
+    <Content Include="dist\css\bootstrap.css" />
+    <Content Include="dist\css\bootstrapValidator.min.css" />
+    <Content Include="dist\css\font-awesome.min.css" />
+    <Content Include="dist\css\jumbotron-narrow.css" />
+    <Content Include="dist\css\register.css" />
+    <Content Include="dist\css\register2.css" />
+    <Content Include="dist\css\register3.css" />
+    <Content Include="dist\css\signin.css" />
+    <Content Include="dist\css\style.css" />
+    <Content Include="dist\css\test\style.css" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="dist\js\bootstrap.js" />
+    <Content Include="dist\js\bootstrap.min.js" />
+    <Content Include="dist\js\bootstrapvalidator.min.js" />
+    <Content Include="dist\js\collapse.js" />
+    <Content Include="dist\js\jquery.min.js" />
+    <Content Include="dist\js\register2.js" />
+    <Content Include="dist\js\script.js" />
+    <Content Include="dist\login.html" />
+    <Content Include="DownloadCourseMaterial.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="ManageAccount.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="AdminUploadCourseware.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="StudentAssignmentPanel.aspx" />
+    <Content Include="StudentLogout.aspx" />
+    <Content Include="UploadAssignment.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Welcome.aspx" />
+    <Content Include="WelcomT.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUploadAssignment.aspx.cs">
+      <DependentUpon>AdminUploadAssignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUploadAssignment.aspx.designer.cs">
+      <DependentUpon>AdminUploadAssignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUploadMaterial.aspx.cs">
+      <DependentUpon>AdminUploadMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUploadMaterial.aspx.designer.cs">
+      <DependentUpon>AdminUploadMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewAssignment.aspx.cs">
+      <DependentUpon>AdminViewAssignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminViewAssignment.aspx.designer.cs">
+      <DependentUpon>AdminViewAssignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewStudents.aspx.cs">
+      <DependentUpon>AdminViewStudents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminViewStudents.aspx.designer.cs">
+      <DependentUpon>AdminViewStudents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeP.aspx.cs">
+      <DependentUpon>ChangeP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangeP.aspx.designer.cs">
+      <DependentUpon>ChangeP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePasswordTest.aspx.cs">
+      <DependentUpon>ChangePasswordTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePasswordTest.aspx.designer.cs">
+      <DependentUpon>ChangePasswordTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadCourseMaterial.aspx.cs">
+      <DependentUpon>DownloadCourseMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownloadCourseMaterial.aspx.designer.cs">
+      <DependentUpon>DownloadCourseMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageAccount.aspx.cs">
+      <DependentUpon>ManageAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageAccount.aspx.designer.cs">
+      <DependentUpon>ManageAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUploadCourseware.aspx.cs">
+      <DependentUpon>AdminUploadCourseware.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUploadCourseware.aspx.designer.cs">
+      <DependentUpon>AdminUploadCourseware.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAssignmentPanel.aspx.cs">
+      <DependentUpon>StudentAssignmentPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentAssignmentPanel.aspx.designer.cs">
+      <DependentUpon>StudentAssignmentPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentLogout.aspx.cs">
+      <DependentUpon>StudentLogout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentLogout.aspx.designer.cs">
+      <DependentUpon>StudentLogout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadAssignment.aspx.cs">
+      <DependentUpon>UploadAssignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadAssignment.aspx.designer.cs">
+      <DependentUpon>UploadAssignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomT.aspx.cs">
+      <DependentUpon>WelcomT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WelcomT.aspx.designer.cs">
+      <DependentUpon>WelcomT.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\._.DS_Store" />
+    <None Include="assets\font-awesome\fonts\fontawesome-webfontba72.eot" />
+    <None Include="assets\font-awesome\fonts\fontawesome-webfontba72.ttf" />
+    <None Include="assets\font-awesome\fonts\fontawesome-webfontba72.woff" />
+    <None Include="assets\font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <None Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="assets\fonts\glyphicons-halflings-regulard41d.eot" />
+    <None Include="dist\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="dist\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="dist\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="dist\fonts\glyphicons-halflings-regulard41d.eot" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>9775</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
